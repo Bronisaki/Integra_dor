@@ -5,3 +5,6 @@ var app = angular.module('APP', []);
 app.controller('controlador', controlador);
 
 function controlador($scope, $http, $location) {
+
+
+};
