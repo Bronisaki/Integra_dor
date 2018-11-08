@@ -52,16 +52,16 @@
           <div class="modal-dialog modal-sm">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Login</h5>
+                <h5 class="modal-title">Customer login</h5>
                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
                 <form action="customer-orders.html" method="post">
                   <div class="form-group">
-                    <input id="email-modal" type="text" placeholder="E-mail" class="form-control">
+                    <input id="email-modal" type="text" placeholder="email" class="form-control">
                   </div>
                   <div class="form-group">
-                    <input id="password-modal" type="password" placeholder="Senha" class="form-control">
+                    <input id="password-modal" type="password" placeholder="password" class="form-control">
                   </div>
                   <p class="text-center">
                     <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Login</button>
@@ -167,110 +167,67 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">Nova Conta</li>
+                  <li aria-current="page" class="breadcrumb-item active">Minha Conta</li>
                 </ol>
               </nav>
             </div>
-            <div class="col-lg-6">
-              <div class="box">
-                <h1>Nova Conta</h1>
-                <p class="lead">Ainda não é registrado?</p>
-                <p class="text-muted">Com registro você terá acesso a uma enorme variedade de cervejas artesanais e também poderá ser um Mestre Cervejeiro e vender seu rótulo. É fácil, rápido e levará apenas uns minutinhos!</p>
-                <hr>
-                <form action="customer-account.html" method="post" class="needs-validation" novalidate>
-                  <div class="form-group">
-                    <label for="name">Usuário</label>
-                    <input id="name" type="text" class="form-control" placeholder="CervejeiroTop" required="">
-                        <div class="valid-feedback">
-                          Tudo certo!
-                        </div>
-                        <div class="invalid-feedback">
-                          Por favor, insira seu nome de usuário.
-                        </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input id="email" type="text" class="form-control" placeholder="cerveja@livre.com.br" required="">
-                        <div class="valid-feedback">
-                          Tudo certo!
-                        </div>
-                        <div class="invalid-feedback">
-                          Por favor, insira seu e-mail corretamente.
-                        </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Senha</label>
-                    <input id="password" type="password" class="form-control" placeholder="******" required="">
-                        <div class="valid-feedback">
-                          Tudo certo!
-                        </div>
-                        <div class="invalid-feedback">
-                          Por favor, insira a senha.
-                        </div>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Registre-se</button>
-                  </div>
-                </form>
+            <div class="col-lg-3">
+              <!--
+              *** CUSTOMER MENU ***
+              _________________________________________________________
+              -->
+              <div class="card sidebar-menu">
+                <div class="card-header">
+                  <h3 class="h4 card-title">Menu</h3>
+                </div>
+                <div class="card-body">
+                  <ul class="nav nav-pills flex-column"><a href="customer-account.html" class="nav-link"><i class="fa fa-user"></i> Minha Conta</a><a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> Geladeira</a><a href="customer-senha.html" class="nav-link active"><i class="fa fa-list"></i> Minha Senha</a><a href="index.html" class="nav-link"><i class="fa fa-sign-out"></i> Sair</a></ul>
+                </div>
               </div>
+              <!-- /.col-lg-3-->
+              <!-- *** CUSTOMER MENU END ***-->
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-9">
               <div class="box">
-                <h1>Login</h1>
-                <p class="lead">Já é membro?</p>
-                <p class="text-muted">Entre e conheça novos rótulos ou venda seus próprios.</p>
-                <hr>
-                <form action="customer-account.html" method="post" class="needs-validation" novalidate>
-                  <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input id="email" type="text" class="form-control" placeholder="cerveja@livre.com.br" required="">
-                        <div class="valid-feedback">
-                          Tudo certo!
-                        </div>
-                        <div class="invalid-feedback">
-                          Por favor, insira seu e-mail cadastrado.
-                        </div>
+                <h1>Minha Senha</h1>
+                <p class="lead">Mude sua senha.</p>
+                <p class="text-muted">Sempre salve uma senha força e não deixe anotado em qualquer lugar.</p>
+                <h3>Mude a senha</h3>
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="password_old">Senha atual</label>
+                        <input id="password_old" type="password" class="form-control">
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="password">Senha</label>
-                    <input id="password" type="password" class="form-control" placeholder="******" required="">
-                        <div class="valid-feedback">
-                          Tudo certo!
-                        </div>
-                        <div class="invalid-feedback">
-                          Por favor, insira a senha.
-                        </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="password_1">Senha nova</label>
+                        <input id="password_1" type="password" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="password_2">Redigite a senha nova</label>
+                        <input id="password_2" type="password" class="form-control">
+                      </div>
+                    </div>
                   </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Login</button>
+                  <!-- /.row-->
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Salvar a senha nova</button>
                   </div>
                 </form>
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-// Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
-    var forms = document.getElementsByClassName('needs-validation');
-    // Faz um loop neles e evita o envio
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
     <!--
     *** FOOTER ***
     _________________________________________________________
@@ -367,9 +324,5 @@
     <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/front.js"></script>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.js"></script>
-
-    <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>

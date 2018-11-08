@@ -178,10 +178,10 @@
               -->
               <div class="card sidebar-menu">
                 <div class="card-header">
-                  <h3 class="h4 card-title">Customer section</h3>
+                  <h3 class="h4 card-title">Menu</h3>
                 </div>
                 <div class="card-body">
-                  <ul class="nav nav-pills flex-column"><a href="customer-orders.html" class="nav-link active"><i class="fa fa-list"></i> My orders</a><a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a><a href="customer-account.html" class="nav-link"><i class="fa fa-user"></i> My account</a><a href="index.html" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a></ul>
+                  <ul class="nav nav-pills flex-column"><a href="customer-account.html" class="nav-link active"><i class="fa fa-user"></i> Minha Conta</a><a href="customer-wishlist.html" class="nav-link"><i class="fa fa-heart"></i> Geladeira</a><a href="customer-senha.html" class="nav-link"><i class="fa fa-list"></i> Minha Senha</a><a href="index.html" class="nav-link"><i class="fa fa-sign-out"></i> Sair</a></ul>
                 </div>
               </div>
               <!-- /.col-lg-3-->
@@ -190,50 +190,34 @@
             <div class="col-lg-9">
               <div class="box">
                 <h1>Minha Conta</h1>
-                <p class="lead">Change your personal details or your password here.</p>
-                <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <h3>Mude a senha</h3>
-                <form>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="password_old">Senha atual</label>
-                        <input id="password_old" type="password" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="password_1">Senha nova</label>
-                        <input id="password_1" type="password" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="password_2">Redigite a senha nova</label>
-                        <input id="password_2" type="password" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.row-->
-                  <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Salvar a senha nova</button>
-                  </div>
-                </form>
+                <p class="lead">Preencha os cantos abaixos para sua conta ter acesso a todos os recursos do site.</p>
+                <p class="text-muted">É importante que o preenchimento dos dados sejam verídicos, para que não haja oportunidades futuras.</p>
+
                 <h3 class="mt-5">Informações pessoais</h3>
-                <form>
+                <form class="needs-validation" novalidate>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="firstname">Nome Completo</label>
-                        <input id="firstname" type="text" class="form-control" placeholder="João da Silva">
+                        <input id="firstname" type="text" class="form-control" placeholder="João da Silva"  required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, insira seu nome corretamente.
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="lastname">CPF</label>
-                        <input id="lastname" type="text" class="form-control" placeholder="xxx.xxx.xxx-xx">
+                        <input id="lastname" type="text" class="form-control" placeholder="xxx.xxx.xxx-xx" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um CPF válido.
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -241,14 +225,26 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label for="company">Company</label>
-                        <input id="company" type="text" class="form-control">
+                        <label for="company">Endereço</label>
+                        <input id="company" type="text" class="form-control" placeholder="Rua Alameda dos Anjos" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um endereço válido.
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label for="street">Endereço</label>
-                        <input id="street" type="text" class="form-control" placeholder="Rua Alameda dos Anjos">
+                        <label for="street">Bairro</label>
+                        <input id="street" type="text" class="form-control" placeholder="Centro" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um bairro válido.
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -257,37 +253,101 @@
                     <div class="col-md-6 col-lg-3">
                       <div class="form-group">
                         <label for="city">Data de Nascimento</label>
-                        <input id="city" type="text" class="form-control" placeholder="01/01/2000">
+                        <input id="city" type="date" class="form-control" placeholder="01/01/2000" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha uma data válida.
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <div class="form-group">
-                        <label for="zip">ZIP</label>
-                        <input id="zip" type="text" class="form-control">
+                        <label for="zip">CEP</label>
+                        <input id="zip" type="text" class="form-control" placeholder="xxxxx-xxx" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um CEP válido.
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <div class="form-group">
                         <label for="state">Estado</label>
-                        <select id="state" class="form-control" placeholder="Santa Catarina"></select>
+                        <select id="state" class="form-control" placeholder="SC" value="SC" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um estado entre as opções.
+                        </div>
+                          <option>AC</option>
+                          <option>AL</option>
+                          <option>AP</option>
+                          <option>AM</option>
+                          <option>BA</option>
+                          <option>CE</option>
+                          <option>DF</option>
+                          <option>ES</option>
+                          <option>GO</option>
+                          <option>MA</option>
+                          <option>MT</option>
+                          <option>MS</option>
+                          <option>MG</option>
+                          <option>PA</option>
+                          <option>PB</option>
+                          <option>PR</option>
+                          <option>PE</option>
+                          <option>PI</option>
+                          <option>RJ</option>
+                          <option>RN</option>
+                          <option>RS</option>
+                          <option>RO</option>
+                          <option>RR</option>
+                          <option>SC</option>
+                          <option>SP</option>
+                          <option>SE</option>
+                          <option>TO</option>
+                        </select>
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <div class="form-group">
                         <label for="country">País</label>
-                        <select id="country" class="form-control" placeholder="Brasil"></select>
+                        <input id="country" class="form-control" placeholder="Brasil" value="Brasil" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um país válido.
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="phone">Telefone</label>
-                        <input id="phone" type="text" class="form-control" placeholder="(xx) x xxxx-xxxx">
+                        <input id="phone" type="text" class="form-control" placeholder="(xx) x xxxx-xxxx" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um número de telefone.
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input id="email" type="text" class="form-control" placeholder="cerveja@livre.com.br">
+                        <input id="email" type="text" class="form-control" placeholder="cerveja@livre.com.br" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, insira seu e-mail corretamente.
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-12 text-center">
@@ -301,6 +361,31 @@
         </div>
       </div>
     </div>
+
+
+<script>
+// Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+    var forms = document.getElementsByClassName('needs-validation');
+    // Faz um loop neles e evita o envio
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+
     <!--
     *** FOOTER ***
     _________________________________________________________
