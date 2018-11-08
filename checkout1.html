@@ -173,21 +173,33 @@
             </div>
             <div id="checkout" class="col-lg-9">
               <div class="box">
-                <form method="get" action="checkout2.html">
+                <form method="get" action="checkout2.html" class="needs-validation" novalidate>
                   <h1>Checkout - Endereço</h1>
                   <div class="nav flex-column flex-md-row nav-pills text-center"><a href="checkout1.html" class="nav-link flex-sm-fill text-sm-center active"> <i class="fa fa-map-marker">                  </i>Endereço</a><a href="#" class="nav-link flex-sm-fill text-sm-center disabled"> <i class="fa fa-truck">                       </i>Método de Entrega</a><a href="#" class="nav-link flex-sm-fill text-sm-center disabled"> <i class="fa fa-money">                      </i>Método de Pagamento</a><a href="#" class="nav-link flex-sm-fill text-sm-center disabled"> <i class="fa fa-eye">                     </i>Ver Ordem de Compra</a></div>
                   <div class="content py-3">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="firstname">Nome</label>
-                          <input id="firstname" type="text" class="form-control" placeholder="João">
+                          <label for="firstname">Nome Completo</label>
+                          <input id="firstname" type="text" class="form-control" placeholder="João da Silva" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, insira seu nome completo corretamente.
+                        </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="lastname">Sobrenome</label>
-                          <input id="lastname" type="text" class="form-control" placeholder="da Silva">
+                          <label for="lastname">CPF</label>
+                          <input id="lastname" type="text" class="form-control" placeholder="xxx.xxx.xxx-xx" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, insira seu CPF corretamente.
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -195,56 +207,132 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="company">Company</label>
-                          <input id="company" type="text" class="form-control">
+                          <label for="company">Endereço</label>
+                          <input id="company" type="text" class="form-control" placeholder="Rua Alameda dos Anjos" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, insira seu nome corretamente.
+                        </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="street">Rua</label>
-                          <input id="street" type="text" class="form-control">
+                          <label for="street">Bairro</label>
+                          <input id="street" type="text" class="form-control" placeholder="Centro" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, insira seu bairro corretamente.
+                        </div>
                         </div>
                       </div>
                     </div>
                     <!-- /.row-->
-                    <div class="row">
-                      <div class="col-md-6 col-lg-3">
-                        <div class="form-group">
-                          <label for="city">Company</label>
-                          <input id="city" type="text" class="form-control">
+<div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="form-group">
+                        <label for="city">Data de Nascimento</label>
+                        <input id="city" type="date" class="form-control" placeholder="01/01/2000" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
                         </div>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <div class="form-group">
-                          <label for="zip">ZIP</label>
-                          <input id="zip" type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <div class="form-group">
-                          <label for="state">Estado</label>
-                          <input id="state" type="text" class="form-control" placeholder="Santa Catarina"></input>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <div class="form-group">
-                          <label for="country">País</label>
-                          <input id="country" type="text" class="form-control" placeholder="Brasil"></input>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="phone">Telefone</label>
-                          <input id="phone" type="text" class="form-control" placeholder="(xx) x xxxx-xxxx">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="email">E-mail</label>
-                          <input id="email" type="text" class="form-control" placeholder="Cerveja@livre.com">
+                        <div class="invalid-feedback">
+                          Por favor, escolha uma data válida.
                         </div>
                       </div>
                     </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="form-group">
+                        <label for="zip">CEP</label>
+                        <input id="zip" type="text" class="form-control" placeholder="xxxxx-xxx" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um CEP válido.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="form-group">
+                        <label for="state">Estado</label>
+                        <select id="state" class="form-control" placeholder="SC" value="SC" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um estado entre as opções.
+                        </div>
+                          <option>AC</option>
+                          <option>AL</option>
+                          <option>AP</option>
+                          <option>AM</option>
+                          <option>BA</option>
+                          <option>CE</option>
+                          <option>DF</option>
+                          <option>ES</option>
+                          <option>GO</option>
+                          <option>MA</option>
+                          <option>MT</option>
+                          <option>MS</option>
+                          <option>MG</option>
+                          <option>PA</option>
+                          <option>PB</option>
+                          <option>PR</option>
+                          <option>PE</option>
+                          <option>PI</option>
+                          <option>RJ</option>
+                          <option>RN</option>
+                          <option>RS</option>
+                          <option>RO</option>
+                          <option>RR</option>
+                          <option>SC</option>
+                          <option>SP</option>
+                          <option>SE</option>
+                          <option>TO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="form-group">
+                        <label for="country">País</label>
+                        <input id="country" class="form-control" placeholder="Brasil" value="Brasil" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um país válido.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" type="text" class="form-control" placeholder="(xx) x xxxx-xxxx" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um número de telefone.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text" class="form-control" placeholder="cerveja@livre.com.br" required="">
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                        <div class="invalid-feedback">
+                          Por favor, insira seu e-mail corretamente.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                     <!-- /.row-->
                   </div>
                   <div class="box-footer d-flex justify-content-between"><a href="basket.html" class="btn btn-outline-secondary"><i class="fa fa-chevron-left"></i>Voltar para Geladeira</a>
@@ -292,6 +380,27 @@
         </div>
       </div>
     </div>
+
+    <script>
+// Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+    var forms = document.getElementsByClassName('needs-validation');
+    // Faz um loop neles e evita o envio
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
     <!--
     *** FOOTER ***
     _________________________________________________________
