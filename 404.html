@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Obaju : e-commerce template</title>
+    <title>Cerveja Livre</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- navbar-->
-    <header class="header mb-5">
+    <header class="header mb-5" style="height: 100px;">
       <!--
       *** TOPBAR ***
       _________________________________________________________
@@ -36,13 +36,14 @@
       <div id="top">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">Offer of the day</a><a href="#" class="ml-1">Get flat 35% off on orders over $50!</a></div>
+            <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-warning btn-sm">Seja um Mestre Cervejeiro</a></div>
             <div class="col-lg-6 text-center text-lg-right">
               <ul class="menu list-inline mb-0">
+                <li class="list-inline-item"><a href="./index.html">Home</a></li>
                 <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                <li class="list-inline-item"><a href="register.html">Register</a></li>
-                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-                <li class="list-inline-item"><a href="#">Recently viewed</a></li>
+                <li class="list-inline-item"><a href="register.html">Registrar</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contato</a></li>
+                <li class="list-inline-item"><a href="./sobre.html">Sobre</a></li>
               </ul>
             </div>
           </div>
@@ -51,23 +52,31 @@
           <div class="modal-dialog modal-sm">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Customer login</h5>
+                <h5 class="modal-title">Login</h5>
                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
                 <form action="customer-orders.html" method="post">
                   <div class="form-group">
+<<<<<<< HEAD
                     <input id="email-modal" type="text" placeholder="Usuario" class="form-control">
                   </div>
                   <div class="form-group">
                     <input id="password-modal" type="password" placeholder="senha" class="form-control">
+=======
+                    <input id="email-modal" type="text" placeholder="E-mail" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input id="password-modal" type="password" placeholder="Senha" class="form-control">
+>>>>>>> ef49283cf25cc427fb67d8ae17ee3c2f082746fa
                   </div>
                   <p class="text-center">
-                    <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                    <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Login</button>
                   </p>
                 </form>
-                <p class="text-center text-muted">Not registered yet?</p>
-                <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+                <p class="text-center text-muted">Ainda não é registrado?</p>
+                <hr class="my-4">
+                <p class="text-center text-muted"><a href="register.html"><strong>Registre-se agora</strong></a>! E seja um Mestre Cervejeiro e/ou apreciador de novas marcas.</p>
               </div>
             </div>
           </div>
@@ -77,172 +86,62 @@
         
       </div>
       <nav class="navbar navbar-expand-lg">
-        <div class="container"><a href="index.html" class="navbar-brand home"><img src="img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
-          <div class="navbar-buttons">
-            <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
-            <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
-          </div>
+        <div class="container"><a href="index.html" class="navbar-brand home"><img src="img/CV_logo1.png" style="width: 300px;" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
+          
           <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-              <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Men<b class="caret"></b></a>
-                <ul class="dropdown-menu megamenu">
+              <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">GELADEIRA<b class="caret"></b></a>
+                <ul class="dropdown-menu megamenu" style="padding-top: 15px;">
                   <li>
-                    <div class="row">
+                    <div class="row" style="padding-top: -15px;">
                       <div class="col-md-6 col-lg-3">
-                        <h5>Clothing</h5>
+                        <h5>Cervejas</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">T-shirts</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Shirts</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Pants</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Accessories</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Experimental</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Pale Ale UK</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Stout</a></li>
+                          
                         </ul>
                       </div>
                       <div class="col-md-6 col-lg-3">
-                        <h5>Shoes</h5>
+                        <h5>Marcas</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Diabo Pálido</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Tchê!</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">UNOESC</a></li>
                         </ul>
                       </div>
                       <div class="col-md-6 col-lg-3">
-                        <h5>Accessories</h5>
+                        <h5>Acessórios</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Abridor de garrafa</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Porta copos</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Taças e Copos</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Chaveiro</a></li>
                         </ul>
                       </div>
                       <div class="col-md-6 col-lg-3">
-                        <h5>Featured</h5>
+                        <h5>Vinhos</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        </ul>
-                        <h5>Looks and trends</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Branco</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Rose</a></li>
+                          <li class="nav-item"><a href="category.html" class="nav-link">Tinto</a></li>
                         </ul>
                       </div>
                     </div>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Ladies<b class="caret"></b></a>
-                <ul class="dropdown-menu megamenu">
-                  <li>
-                    <div class="row">
-                      <div class="col-md-6 col-lg-3">
-                        <h5>Clothing</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">T-shirts</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Shirts</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Pants</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Accessories</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5>Shoes</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5>Accessories</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                        </ul>
-                        <h5>Looks and trends</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Hiking shoes</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <div class="banner"><a href="#"><img src="img/banner.jpg" alt="" class="img img-fluid"></a></div>
-                        <div class="banner"><a href="#"><img src="img/banner2.jpg" alt="" class="img img-fluid"></a></div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Template<b class="caret"></b></a>
-                <ul class="dropdown-menu megamenu">
-                  <li>
-                    <div class="row">
-                      <div class="col-md-6 col-lg-3">
-                        <h5>Shop</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="index.html" class="nav-link">Homepage</a></li>
-                          <li class="nav-item"><a href="category.html" class="nav-link">Category - sidebar left</a></li>
-                          <li class="nav-item"><a href="category-right.html" class="nav-link">Category - sidebar right</a></li>
-                          <li class="nav-item"><a href="category-full.html" class="nav-link">Category - full width</a></li>
-                          <li class="nav-item"><a href="detail.html" class="nav-link">Product detail</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5>User</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="register.html" class="nav-link">Register / login</a></li>
-                          <li class="nav-item"><a href="customer-orders.html" class="nav-link">Orders history</a></li>
-                          <li class="nav-item"><a href="customer-order.html" class="nav-link">Order history detail</a></li>
-                          <li class="nav-item"><a href="customer-wishlist.html" class="nav-link">Wishlist</a></li>
-                          <li class="nav-item"><a href="customer-account.html" class="nav-link">Customer account / change password</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5>Order process</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="basket.html" class="nav-link">Shopping cart</a></li>
-                          <li class="nav-item"><a href="checkout1.html" class="nav-link">Checkout - step 1</a></li>
-                          <li class="nav-item"><a href="checkout2.html" class="nav-link">Checkout - step 2</a></li>
-                          <li class="nav-item"><a href="checkout3.html" class="nav-link">Checkout - step 3</a></li>
-                          <li class="nav-item"><a href="checkout4.html" class="nav-link">Checkout - step 4</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5>Pages and blog</h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="blog.html" class="nav-link">Blog listing</a></li>
-                          <li class="nav-item"><a href="post.html" class="nav-link">Blog Post</a></li>
-                          <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-                          <li class="nav-item"><a href="text.html" class="nav-link">Text page</a></li>
-                          <li class="nav-item"><a href="text-right.html" class="nav-link">Text page - right sidebar</a></li>
-                          <li class="nav-item"><a href="404.html" class="nav-link">404 page</a></li>
-                          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div class="navbar-buttons d-flex justify-content-end">
-              <!-- /.nav-collapse-->
-              <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
-              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>3 items in cart</span></a></div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div id="search" class="collapse">
+
+      <nav class="navbar navbar">
+  <form class="form-inline">
+    <input class="form-control form-control-bt" style="width: 300px;" type="search" placeholder="Dê uma busca no site..." aria-label="Pesquisar">
+    <button class="btn btn-warning my-3 my-sm-0" type="submit">Pesquisar</button>
+  </form>
+</nav>
+              
+
+              <ul><div id="search" class="collapse">
         <div class="container">
           <form role="search" class="ml-auto">
             <div class="input-group">
@@ -254,6 +153,17 @@
           </form>
         </div>
       </div>
+    </ul>
+            </ul>
+            <div class="navbar-buttons d-flex justify-content-end">
+              <!-- /.nav-collapse-->
+              
+              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="basket.html" class="btn btn-warning navbar-btn"><img src="./img/gela.png" style="width: 48px;"></a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
     </header>
     <div id="all">
       <div id="content">
@@ -263,18 +173,18 @@
               <!-- breadcrumb-->
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">Page not found</li>
+                  <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                  <li aria-current="page" class="breadcrumb-item active">Página não encontrada</li>
                 </ol>
               </nav>
               <div id="error-page" class="row">
                 <div class="col-md-6 mx-auto">
                   <div class="box text-center py-5">
-                    <p class="text-center"><img src="img/logo.png" alt="Obaju template"></p>
-                    <h3>We are sorry - this page is not here anymore</h3>
-                    <h4 class="text-muted">Error 404 - Page not found</h4>
-                    <p class="text-center">To continue please use the <strong>Search form</strong> or <strong>Menu</strong> above.</p>
-                    <p class="buttons"><a href="index.html" class="btn btn-primary"><i class="fa fa-home"></i> Go to Homepage</a></p>
+                    <p class="text-center"><img src="./img/CV_logo2.png" alt="Cerveja Livre" style="width: 150px;"></p>
+                    <h3>Desculpe - Essa página não esta mais aqui.</h3>
+                    <h4 class="text-muted">Error 404 - Página não encontrada</h4>
+                    <p class="text-center">Para continuar, por favor use a <strong>pesquisa</strong> ou <strong>Menu</strong> acima.</p>
+                    <p class="buttons"><a href="index.html" class="btn btn-primary"><i class="fa fa-home"></i> Vá para a Home</a></p>
                   </div>
                 </div>
               </div>
@@ -291,56 +201,54 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6">
-            <h4 class="mb-3">Pages</h4>
+            <h4 class="mb-3">Páginas</h4>
             <ul class="list-unstyled">
-              <li><a href="text.html">About us</a></li>
-              <li><a href="text.html">Terms and conditions</a></li>
+              <li><a href="./sobre.html">Sobre nós</a></li>
+              <li><a href="text.html">Termos e Condições de Uso</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="contact.html">Contate-nos</a></li>
             </ul>
             <hr>
-            <h4 class="mb-3">User section</h4>
+            <h4 class="mb-3">Usuário</h4>
             <ul class="list-unstyled">
               <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-              <li><a href="register.html">Regiter</a></li>
+              <li><a href="register.html">Registrar</a></li>
             </ul>
           </div>
           <!-- /.col-lg-3-->
           <div class="col-lg-3 col-md-6">
-            <h4 class="mb-3">Top categories</h4>
-            <h5>Men</h5>
+            <h4 class="mb-3">Top Categorias</h4>
+            <h5>Marcas</h5>
             <ul class="list-unstyled">
-              <li><a href="category.html">T-shirts</a></li>
-              <li><a href="category.html">Shirts</a></li>
-              <li><a href="category.html">Accessories</a></li>
+              <li><a href="category.html">Diabo Pálido</a></li>
+              <li><a href="category.html">UNOESC</a></li>
+              <li><a href="category.html">Tchê!</a></li>
             </ul>
-            <h5>Ladies</h5>
+            <h5>Cervejas</h5>
             <ul class="list-unstyled">
-              <li><a href="category.html">T-shirts</a></li>
-              <li><a href="category.html">Skirts</a></li>
-              <li><a href="category.html">Pants</a></li>
-              <li><a href="category.html">Accessories</a></li>
+              <li><a href="category.html">Pale Ale UK</a></li>
+              <li><a href="category.html">Stout</a></li>
             </ul>
           </div>
           <!-- /.col-lg-3-->
           <div class="col-lg-3 col-md-6">
-            <h4 class="mb-3">Where to find us</h4>
-            <p><strong>Obaju Ltd.</strong><br>13/25 New Avenue<br>New Heaven<br>45Y 73J<br>England<br><strong>Great Britain</strong></p><a href="contact.html">Go to contact page</a>
+            <h4 class="mb-3">Como nos encontrar</h4>
+            <p><strong>Cerveja Livre Ltd.</strong><br>Cerveja@livre.com</p><a href="contact.html">Vá para a página de contato</a>
             <hr class="d-block d-md-none">
           </div>
           <!-- /.col-lg-3-->
           <div class="col-lg-3 col-md-6">
-            <h4 class="mb-3">Get the news</h4>
-            <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <h4 class="mb-3">Receba notícias novas</h4>
+            <p class="text-muted">Inscreva-se para receber um e-mail assim que uma cerveja de sua preferência estiver disponível.</p>
             <form>
               <div class="input-group">
                 <input type="text" class="form-control"><span class="input-group-append">
-                  <button type="button" class="btn btn-outline-secondary">Subscribe!</button></span>
+                  <button type="button" class="btn btn-outline-secondary">Inscreva-se!</button></span>
               </div>
               <!-- /input-group-->
             </form>
             <hr>
-            <h4 class="mb-3">Stay in touch</h4>
+            <h4 class="mb-3">Mantenha contato</h4>
             <p class="social"><a href="#" class="facebook external"><i class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i class="fa fa-twitter"></i></a><a href="#" class="instagram external"><i class="fa fa-instagram"></i></a><a href="#" class="gplus external"><i class="fa fa-google-plus"></i></a><a href="#" class="email external"><i class="fa fa-envelope"></i></a></p>
           </div>
           <!-- /.col-lg-3-->
@@ -361,7 +269,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-2 mb-lg-0">
-            <p class="text-center text-lg-left">©2018 Your name goes here.</p>
+            <p class="text-center text-lg-left">©2018 Cerveja Livre</p>
           </div>
           <div class="col-lg-6">
             <p class="text-center text-lg-right">Template design by <a href="https://bootstrapious.com/e-commerce-templates">Bootstrapious: E-commerce</a>
