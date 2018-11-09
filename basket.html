@@ -175,55 +175,52 @@
               <div class="box">
                 <form method="post" action="checkout1.html">
                   <h1>Geladeira</h1>
-                  <p class="text-muted">You currently have 3 item(s) in your cart.</p>
+                  <p class="text-muted">Você possui 3 item(s) em sua geladeira.</p>
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
                         <tr>
                           <th colspan="2">Product</th>
-                          <th>Quantity</th>
-                          <th>Unit price</th>
-                          <th>Discount</th>
+                          <th>Quantidade</th>
+                          <th>Preço Unitário</th>
                           <th colspan="2">Total</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><a href="#"><img src="img/detailsquare.jpg" alt="White Blouse Armani"></a></td>
-                          <td><a href="#">White Blouse Armani</a></td>
+                          <td><a href="#"><img src="./img/product2.jpg" alt="White Blouse Armani"></a></td>
+                          <td><a href="#">UNOESC 600ml</a></td>
                           <td>
                             <input type="number" value="2" class="form-control">
                           </td>
-                          <td>$123.00</td>
-                          <td>$0.00</td>
-                          <td>$246.00</td>
+                          <td>R$453.00</td>
+                          <td>R$906.00</td>
                           <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <tr>
-                          <td><a href="#"><img src="img/basketsquare.jpg" alt="Black Blouse Armani"></a></td>
-                          <td><a href="#">Black Blouse Armani</a></td>
+                          <td><a href="#"><img src="./img/product1.jpg" alt="Black Blouse Armani"></a></td>
+                          <td><a href="#">Tchê! 600ml</a></td>
                           <td>
                             <input type="number" value="1" class="form-control">
                           </td>
-                          <td>$200.00</td>
-                          <td>$0.00</td>
-                          <td>$200.00</td>
+                          <td>R$25.00</td>
+                          <td>R$25.00</td>
                           <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                       </tbody>
                       <tfoot>
                         <tr>
                           <th colspan="5">Total</th>
-                          <th colspan="2">$446.00</th>
+                          <th colspan="2">R$956.00</th>
                         </tr>
                       </tfoot>
                     </table>
                   </div>
                   <!-- /.table-responsive-->
                   <div class="box-footer d-flex justify-content-between flex-column flex-lg-row">
-                    <div class="left"><a href="category.html" class="btn btn-outline-secondary"><i class="fa fa-chevron-left"></i> Continue comprando</a></div>
+                    <div class="left"><a href="customer-account.html" class="btn btn-outline-secondary"><i class="fa fa-chevron-left"></i> Voltar para Minha Conta</a></div>
                     <div class="right">
-                      <button class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Update cart</button>
+                      <button class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Atualizar Geladeira</button>
                       <button type="submit" class="btn btn-primary">Prosseguir com checkout <i class="fa fa-chevron-right"></i></button>
                     </div>
                   </div>
@@ -233,7 +230,7 @@
               <div class="row same-height-row">
                 <div class="col-lg-3 col-md-6">
                   <div class="box same-height">
-                    <h3>You may also like these products</h3>
+                    <h3>Talvez você goste desses também:</h3>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -245,8 +242,9 @@
                       </div>
                     </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3><a href="detail.html">UNOESC 600ml</a></h3>
+                    <p class="price"> 
+                      <del></del> R$453.00
                     </div>
                   </div>
                   <!-- /.product-->
@@ -260,8 +258,9 @@
                       </div>
                     </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3><a href="detail.html">Diabo Pálido 666ml</a></h3>
+                    <p class="price"> 
+                      <del></del>R$66.00
                     </div>
                   </div>
                   <!-- /.product-->
@@ -275,8 +274,9 @@
                       </div>
                     </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3><a href="detail.html">Tchê! 600ml</a></h3>
+                    <p class="price"> 
+                      <del></del> R$25.00
                     </div>
                   </div>
                   <!-- /.product-->
@@ -287,27 +287,27 @@
             <div class="col-lg-3">
               <div id="order-summary" class="box">
                 <div class="box-header">
-                  <h3 class="mb-0">Order summary</h3>
+                  <h3 class="mb-0">Sumário</h3>
                 </div>
-                <p class="text-muted">Shipping and additional costs are calculated based on the values you have entered.</p>
+                <p class="text-muted">O custo de entregas são calculadas baseadas no endereço informado.</p>
                 <div class="table-responsive">
                   <table class="table">
                     <tbody>
                       <tr>
-                        <td>Order subtotal</td>
-                        <th>$446.00</th>
+                        <td>Subtotal</td>
+                        <th>R$956.00</th>
                       </tr>
                       <tr>
-                        <td>Shipping and handling</td>
-                        <th>$10.00</th>
+                        <td>Entrega</td>
+                        <th>R$10.00</th>
                       </tr>
                       <tr>
                         <td>Tax</td>
-                        <th>$0.00</th>
+                        <th>R$0.00</th>
                       </tr>
                       <tr class="total">
                         <td>Total</td>
-                        <th>$456.00</th>
+                        <th>$966.00</th>
                       </tr>
                     </tbody>
                   </table>
@@ -315,9 +315,9 @@
               </div>
               <div class="box">
                 <div class="box-header">
-                  <h4 class="mb-0">Coupon code</h4>
+                  <h4 class="mb-0">Cupom de Desconto</h4>
                 </div>
-                <p class="text-muted">If you have a coupon code, please enter it in the box below.</p>
+                <p class="text-muted">Se você possui um cupom de desconto, insira abaixo para resgatar.</p>
                 <form>
                   <div class="input-group">
                     <input type="text" class="form-control"><span class="input-group-append">
