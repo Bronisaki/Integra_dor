@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="APP" ng-controller="controlador">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,9 +56,9 @@
                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
-                <form action="customer-account.html" method="post">
+                <form method="post">
                   <div class="form-group">
-                    <input id="email-modal" type="text" placeholder="E-mail" class="form-control">
+                    <input id="email-modal" type="text" placeholder="usuario" class="form-control">
                   </div>
                   <div class="form-group">
                     <input id="password-modal" type="password" placeholder="Senha" class="form-control">
@@ -128,9 +128,12 @@
 
       <nav class="navbar navbar">
   <form class="form-inline">
-    <input class="form-control form-control-bt" style="width: 300px;" type="search" placeholder="Dê uma busca no site..." aria-label="Pesquisar">
+    <input class="form-control form-control-bt" style="width: 300px;" type="search" placeholder="Dê uma busca no site..." aria-label="Pesquisar" id="busca">
     <button class="btn btn-warning my-3 my-sm-0" type="submit">Pesquisar</button>
   </form>
+  <div id="lista">
+    
+  </div>
 </nav>
               
 
@@ -261,12 +264,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                  </div><a href="produto.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">Diabo Pálido 666ml</a></h3>
+                    <h3><a href="produto.html">Diabo Pálido 666ml</a></h3>
                     <p class="price"> 
                       <del></del>R$66.00
                     </p>
@@ -284,12 +287,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto2.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto2.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                  </div><a href="produto2.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">UNOESC 600ml</a></h3>
+                    <h3><a href="produto2.html">UNOESC 600ml</a></h3>
                     <p class="price"> 
                       <del></del> R$453.00
                     </p>
@@ -302,12 +305,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto3.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto3.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                  </div><a href="produto3.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">Tchê! 600ml</a></h3>
+                    <h3><a href="produto3.html">Tchê! 600ml</a></h3>
                     <p class="price"> 
                       <del></del>$25.00
                     </p>
@@ -320,12 +323,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto3.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto3.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                  </div><a href="produto3.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">Tchê! 600ml</a></h3>
+                    <h3><a href="produto3.html">Tchê! 600ml</a></h3>
                     <p class="price"> 
                       <del></del> R$25.00
                     </p>
@@ -338,12 +341,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto2.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto2.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                  </div><a href="produto2.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">UNOESC 600ml</a></h3>
+                    <h3><a href="produto2.html">UNOESC 600ml</a></h3>
                     <p class="price"> 
                       <del></del> R$453.00
                     </p>
@@ -357,12 +360,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto2.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto2.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product1.png" alt="" class="img-fluid"></a>
+                  </div><a href="produto2.html" class="invisible"><img src="img/product1.png" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">UNOESC 600ml</a></h3>
+                    <h3><a href="produto2.html">UNOESC 600ml</a></h3>
                     <p class="price"> 
                       <del></del> R$453.00
                     </p>
@@ -376,12 +379,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                  </div><a href="produto.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">Diabo Pálido 666ml</a></h3>
+                    <h3><a href="produto.html">Diabo Pálido 666ml</a></h3>
                     <p class="price"> 
                       <del></del>R$66.00
                     </p>
@@ -394,12 +397,12 @@
                 <div class="product">
                   <div class="flip-container">
                     <div class="flipper">
-                      <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                      <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="front"><a href="produto3.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
+                      <div class="back"><a href="produto3.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
                     </div>
-                  </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                  </div><a href="produto3.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
                   <div class="text">
-                    <h3><a href="detail.html">Tchê! 600ml</a></h3>
+                    <h3><a href="produto3.html">Tchê! 600ml</a></h3>
                     <p class="price"> 
                       <del></del> R$25.00
                     </p>
@@ -516,8 +519,42 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/front.js"></script>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.js"></script>
+    <script>
+    $(".fa-sign-in").on("click", function(e){
+      e.preventDefault();
 
-    <script type="text/javascript" src="./app.js"></script>
+			var data = {
+				"user": $("#email-modal").val(),
+				"senha": $("#password-modal").val()
+      };
+      
+      $.post("./php/login.php", data, function(resposta){
+        console.log(resposta);
+      });
+    });
+      
+    </script>
+    <script>
+      var cervejas = ''
+      $.get("./php/pesquisa.php", function(resposta){
+        cervejas = resposta
+        function mostrar(arr) {
+          var lista = $('#lista'); // coloquei em cache aqui para não ter $('#lista').append() dentro do loop
+          lista.html(''); // para limpar antes de voltar a colocar a lista
+
+          arr.forEach(function (rest) {
+            lista.append('<div>' + rest.name + '</div>');
+          });
+        }
+      });
+      $('#busca').on('keyup', function () {
+        var busca = this.value;
+        var filtrados = cervejas.filter(function (rest) {
+            return rest.name.toLowerCase().indexOf(busca) != -1;
+        });
+        mostrar(filtrados);
+      });
+    
+    </script>    
   </body>
 </html>
